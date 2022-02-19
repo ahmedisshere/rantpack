@@ -1,19 +1,23 @@
 import './App.css';
 
 function App() {
+
   return (
+
     <div className="App">
-      <h1> Hello Rant! </h1>
+      <h1> Bored? </h1>
       <Carousel />
     </div>
+    
   );
 }
 
-function Carousel(){
+function Carousel() {
+
   return (
 
-    <h1> Rant component</h1>
-    
+    <h1> Go Moo your neighbours lawn ~ </h1>
+
   );
 }
 
