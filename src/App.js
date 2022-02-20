@@ -1,29 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import Person from './components/Person';
 
 
-function App() {
+// functional component ->>
 
-  return (
 
-    <div className="App">
-      <h1> Bored? </h1>
-      <Carousel />
-    </div>
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1> Bored? </h1>
+//       <Person />
+//     </div>
+//   ); 
+// }
 
-  );
-  //  
+
+// Class component -->>
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+         <h1> Bored? </h1>
+         <Person />
+      </div>
+    );
+  }
 }
 
-function Carousel() {
 
-  return (
 
-    <h1> Go Moo Your Neighbours lawn ~ </h1>
 
-  );
-
-  // return React.createElement('div', null, React.createElement('h1', null, "Go Moo your neighbours lawn~"));
-}
 
 export default App;
