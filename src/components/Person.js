@@ -5,6 +5,7 @@ let Person = (props) => {
     return (
         <div>
             <h3> Gamer {props.gamer} & Rank {props.rank} </h3>
+            <h4>Intel: {props.children} </h4>
         </div>
     );
 }
