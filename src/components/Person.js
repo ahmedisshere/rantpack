@@ -1,14 +1,12 @@
 import React from "react";
 
-function Person() {
-
+let Person = (props) => {
+    console.log(props);
     return (
-  
-      <h1> Go Moo Your Neighbours lawn ~ </h1>
-  
+        <div>
+            <h3> Gamer {props.gamer} & Rank {props.rank} </h3>
+        </div>
     );
-  
-    // return React.createElement('div', null, React.createElement('h1', null, "Go Moo your neighbours lawn~"));
-  }
+}
 
-  export default Person;
+export default Person;
