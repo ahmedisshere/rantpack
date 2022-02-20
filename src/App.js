@@ -1,15 +1,18 @@
+import React from 'react';
 import './App.css';
+
 
 function App() {
 
-  return (
+  // return (
 
-    <div className="App">
-      <h1> Bored? </h1>
-      <Carousel />
-    </div>
-    
-  );
+  //   <div className="App">
+  //     <h1> Bored? </h1>
+  //     <Carousel />
+  //   </div>
+
+  // );
+  return React.createElement('div', {className: "App"}, React.createElement('h1', null, "sup cartman?"),<Carousel/>);
 }
 
 function Carousel() {
