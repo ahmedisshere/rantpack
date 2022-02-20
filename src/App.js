@@ -19,7 +19,7 @@ function Carousel() {
 
   return (
 
-    <h1> Go Moo your neighbours lawn ~ </h1>
+    <h1> Go Moo Your Neighbours lawn ~ </h1>
 
   );
 
