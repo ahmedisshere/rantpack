@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Person from './components/Person';
+import Book from './components/Book';
 
 
 // functional component ->>
@@ -19,19 +19,20 @@ import Person from './components/Person';
 // Class component -->>
 
 class App extends Component {
+
   render() {
     return (
 
       <div className="App">
-         <h1> Bored? </h1>
-         <Person gamer="fatman" rank="Distinguished Master Guardian"/>
-         <Person gamer="markeloff" rank="Legendary Eagle"/>
-         <Person gamer="cartman" rank="Supreme Master Noob Class">This guy is a Global Elite</Person>
-         <Person gamer="movemint" rank="Legendary Deagle Master"/>
+        <h1> Book List </h1>
+        <Book bookName="1984" writer="George Orwell" />
+        <Book bookName="The Da Vinci Code" writer="Dan Brown" />
+        <Book bookName="The Alchemist" writer="Paulo Coelho" />
       </div>
 
     );
   }
 }
+// State -> state a components own information,state is generally declared on class component
 
 export default App;
