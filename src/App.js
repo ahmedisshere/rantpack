@@ -26,8 +26,8 @@ class App extends Component {
          <h1> Bored? </h1>
          <Person gamer="fatman" rank="Distinguished Master Guardian"/>
          <Person gamer="markeloff" rank="Legendary Eagle"/>
-         <Person gamer="cartman" rank="Supreme Master First Class">This guy is a Global Elite</Person>
-         <Person gamer="movemint" rank="Legendary Eagle Master"/>
+         <Person gamer="cartman" rank="Supreme Master Noob Class">This guy is a Global Elite</Person>
+         <Person gamer="movemint" rank="Legendary Deagle Master"/>
       </div>
 
     );
