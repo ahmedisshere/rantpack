@@ -30,7 +30,7 @@ class App extends Component {
   state = {
     books: [
       { bookName: "1994", writer: "George Orwell" },
-      { bookName: "The Da Vinci Code", writer: "Dan Brown" },
+      { bookName: "Da Vinci Code", writer: "Dan Brown" },
       { bookName: "The Alchemist", writer: "Paulo Coelho" }
     ],
     otherProp: "some other random bullshit"
