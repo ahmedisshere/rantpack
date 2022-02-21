@@ -19,15 +19,31 @@ import Book from './components/Book';
 // Class component -->>
 
 class App extends Component {
+  // lets add state
+  // 16.8 includes react hooks which is somekind of similar feature
+
+  // constructor() {
+  //   super();
+  //   this.state = {};      ->> we can do this as below 
+  // }
+
+  state = {
+    books: [
+      { bookName: "1994", writer: "George Orwell" },
+      { bookName: "The Da Vinci Code", writer: "Dan Brown" },
+      { bookName: "The Alchemist", writer: "Paulo Coelho" }
+    ],
+    otherProp: "some other random props"
+  };
 
   render() {
     return (
 
       <div className="App">
         <h1> Book List </h1>
-        <Book bookName="1984" writer="George Orwell" />
-        <Book bookName="The Da Vinci Code" writer="Dan Brown" />
-        <Book bookName="The Alchemist" writer="Paulo Coelho" />
+        <Book bookName={this.state.books[0].bookName} writer={this.state.books[0].writer} />
+        <Book bookName={this.state.books[1].bookName} writer={this.state.books[1].writer} />
+        <Book bookName={this.state.books[2].bookName} writer={this.state.books[2].writer} />
       </div>
 
     );
