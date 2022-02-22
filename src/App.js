@@ -43,7 +43,8 @@ class App extends Component {
           writer={this.state.books[1].writer} />
 
         <Book bookName={this.state.books[2].bookName}
-          writer={this.state.books[2].writer} />
+          writer={this.state.books[2].writer} 
+          change = {this.changeBookState}/>
 
       </div>
 

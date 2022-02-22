@@ -4,7 +4,7 @@ const Book = props => {
 
     return (
         <div>
-            <h3>Book: {props.bookName} </h3>
+            <h3 onClick={props.change}>Book: {props.bookName} </h3>
             <h4>Writter: {props.writer}</h4>
         </div>
     );
