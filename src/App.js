@@ -2,30 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Book from './components/Book';
 
-
-// functional component ->>
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1> Bored? </h1>
-//       <Person />
-//     </div>
-//   ); 
-// }
-
-
 // Class component -->>
 
 class App extends Component {
-  // lets add state
+  
   // 16.8 includes react hooks which is somekind of similar feature
-
-  // constructor() {
-  //   super();
-  //   this.state = {};      ->> we can do this as below 
-  // }
 
   state = {
     books: [
@@ -36,14 +17,27 @@ class App extends Component {
     otherProp: "some other random bullshit.."
   };
 
+  changeBookState = () => {
+    console.log("button clicked");
+  }
+
   render() {
     return (
 
       <div className="App">
+
         <h1> Book List </h1>
-        <Book bookName={this.state.books[0].bookName} writer={this.state.books[0].writer} />
-        <Book bookName={this.state.books[1].bookName} writer={this.state.books[1].writer} />
-        <Book bookName={this.state.books[2].bookName} writer={this.state.books[2].writer} />
+        <button onClick={this.changeBookState}>Change State</button>
+
+        <Book bookName={this.state.books[0].bookName} 
+        writer={this.state.books[0].writer} />
+
+        <Book bookName={this.state.books[1].bookName} 
+        writer={this.state.books[1].writer} />
+
+        <Book bookName={this.state.books[2].bookName} 
+        writer={this.state.books[2].writer} />
+
       </div>
 
     );
