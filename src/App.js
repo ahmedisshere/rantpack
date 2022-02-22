@@ -21,13 +21,14 @@ class App extends Component {
     this.setState({
       books: [
         { bookName: "Nineteen Eighty-Four", writer: "George Orwell" },
-        { bookName: "Da Vinci Code", writer: "Dan Brown" },
+        { bookName: "The Da Vinci Code", writer: "Dan Brown" },
         { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
     });
   }
 
   render() {
+    console.log(this.state);
     return (
 
       <div className="App">
