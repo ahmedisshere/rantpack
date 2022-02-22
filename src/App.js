@@ -17,10 +17,10 @@ class App extends Component {
     otherProp: "some other random bullshit.."
   };
 
-  changeBookState = () => {
+  changeBookState = newBookName => {
     this.setState({
       books: [
-        { bookName: "Nineteen Eighty-Four", writer: "George Orwell" },
+        { bookName: newBookName, writer: "George Orwell" },
         { bookName: "The Da Vinci Code", writer: "Dan Brown" },
         { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
@@ -34,7 +34,7 @@ class App extends Component {
       <div className="App">
 
         <h1> Book List </h1>
-        <button onClick={this.changeBookState}>Change State</button>
+        <button onClick={this.changeBookState.bind(this, "Nineteen Eighty-Four")}>Change State</button>
 
         <Book bookName={this.state.books[0].bookName}
           writer={this.state.books[0].writer} />
@@ -44,7 +44,7 @@ class App extends Component {
 
         <Book bookName={this.state.books[2].bookName}
           writer={this.state.books[2].writer} 
-          change = {this.changeBookState}/>
+          change = {this.changeBookState.bind(this, "Nineteen 84")}/>
 
       </div>
 
