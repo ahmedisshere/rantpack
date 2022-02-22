@@ -5,7 +5,7 @@ import Book from './components/Book';
 // Class component -->>
 
 class App extends Component {
-  
+
   // 16.8 includes react hooks which is somekind of similar feature
 
   state = {
@@ -18,7 +18,13 @@ class App extends Component {
   };
 
   changeBookState = () => {
-    console.log("button clicked");
+    this.setState({
+      books: [
+        { bookName: "Nineteen Eighty-Four", writer: "George Orwell" },
+        { bookName: "Da Vinci Code", writer: "Dan Brown" },
+        { bookName: "Metamorphosis", writer: "Franz Kafka" }
+      ]
+    });
   }
 
   render() {
@@ -29,14 +35,14 @@ class App extends Component {
         <h1> Book List </h1>
         <button onClick={this.changeBookState}>Change State</button>
 
-        <Book bookName={this.state.books[0].bookName} 
-        writer={this.state.books[0].writer} />
+        <Book bookName={this.state.books[0].bookName}
+          writer={this.state.books[0].writer} />
 
-        <Book bookName={this.state.books[1].bookName} 
-        writer={this.state.books[1].writer} />
+        <Book bookName={this.state.books[1].bookName}
+          writer={this.state.books[1].writer} />
 
-        <Book bookName={this.state.books[2].bookName} 
-        writer={this.state.books[2].writer} />
+        <Book bookName={this.state.books[2].bookName}
+          writer={this.state.books[2].writer} />
 
       </div>
 
