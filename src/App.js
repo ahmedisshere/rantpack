@@ -33,7 +33,7 @@ class App extends Component {
       { bookName: "Da Vinci Code", writer: "Dan Brown" },
       { bookName: "The Alchemist", writer: "Paulo Coelho" }
     ],
-    otherProp: "some other random bullshit..."
+    otherProp: "some other random bullshit.."
   };
 
   render() {
