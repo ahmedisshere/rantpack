@@ -10,7 +10,7 @@ class App extends Component {
 
   state = {
     books: [
-      { bookName: "1994", writer: "George Orwell" },
+      { bookName: "1984", writer: "George Orwell" },
       { bookName: "Da Vinci Code", writer: "Dan Brown" },
       { bookName: "The Alchemist", writer: "Paulo Coelho" }
     ],
