@@ -44,7 +44,7 @@ class App extends Component {
 
         <Book bookName={this.state.books[2].bookName}
           writer={this.state.books[2].writer} 
-          change = {()=> this.changeBookState( "Nineteen 84")}/>
+          change = {()=> this.changeBookState( "Nineteen Eighty 4")}/>
 
       </div>
 
