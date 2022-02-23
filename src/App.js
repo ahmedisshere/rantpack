@@ -27,6 +27,16 @@ class App extends Component {
     });
   }
 
+  changeWithInputChange = event => {
+    this.setState({
+      books: [
+        { bookName: event.target.value, writer: "George Orwell" },
+        { bookName: "The Da Vinci Code", writer: "Dan Brown" },
+        { bookName: "Metamorphosis", writer: "Franz Kafka" }
+      ]
+    });
+  }
+
   render() {
     console.log(this.state);
     return (
@@ -34,17 +44,20 @@ class App extends Component {
       <div className="App">
 
         <h1> Book List </h1>
-        <button onClick={()=>this.changeBookState("Nineteen Eighty_Four")}>Change State</button>
+        <button onClick={() => this.changeBookState("Nineteen Eighty_Four")}>Change State</button>
+
+        <input type="text" onChange={this.changeWithInputChange} />
 
         <Book bookName={this.state.books[0].bookName}
-          writer={this.state.books[0].writer} />
+          writer={this.state.books[0].writer} 
+          inputName={this.changeWithInputChange}/>
 
         <Book bookName={this.state.books[1].bookName}
           writer={this.state.books[1].writer} />
 
         <Book bookName={this.state.books[2].bookName}
-          writer={this.state.books[2].writer} 
-          change = {()=> this.changeBookState( "Nineteen Eighty 4")}/>
+          writer={this.state.books[2].writer}
+          change={() => this.changeBookState("Nineteen Eighty 4")} />
 
       </div>
 

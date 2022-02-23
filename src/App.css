@@ -1,12 +1,12 @@
 .App {
   text-align: center;
-  background-color: darkslategray;
+  background-color: rgba(105, 105, 105, 0.527);
   color: white;
 }
 
 .color{
 
-  background-color: dodgerblue;
+  background-color: dimgray;
 
 }
 
