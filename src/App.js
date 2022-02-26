@@ -44,7 +44,7 @@ class App extends Component {
       <div className="App">
 
         <h1> Book List </h1>
-        <button onClick={() => this.changeBookState("Nineteen Eighty_Four")}>Change State</button>
+        <button onClick={() => this.changeBookState("Nineteen Eighty-Four")}>Change State</button>
 
         <input type="text" onChange={this.changeWithInputChange} />
 
