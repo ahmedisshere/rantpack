@@ -32,7 +32,7 @@ class App extends Component {
       books: [
         { bookName: event.target.value, writer: "George Orwell" },
         { bookName: "The Da Vinci Code", writer: "Dan Brown" },
-        { bookName: "Metamorphosis", writer: "Franz Kafka." }
+        { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
     });
   }
