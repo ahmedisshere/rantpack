@@ -21,7 +21,7 @@ class App extends Component {
     this.setState({
       books: [
         { bookName: newBookName, writer: "George Orwell" },
-        { bookName: "The Da Vinci Code", writer: "Dan Brown~" },
+        { bookName: "The Da Vinci Code", writer: "Dan Brown" },
         { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
     });
@@ -31,7 +31,7 @@ class App extends Component {
     this.setState({
       books: [
         { bookName: event.target.value, writer: "George Orwell" },
-        { bookName: "The Da Vinci Code", writer: "Dan Brown" },
+        { bookName: "The Da Vinci Code", writer: "Dan BrOwn" },
         { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
     });
