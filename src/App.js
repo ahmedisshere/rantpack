@@ -30,7 +30,7 @@ class App extends Component {
   changeWithInputChange = event => {
     this.setState({
       books: [
-        { bookName: event.target.value, writer: "George_Orwell" },
+        { bookName: event.target.value, writer: "George Orwell" },
         { bookName: "The Da Vinci Code", writer: "Dan BrOwn" },
         { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
