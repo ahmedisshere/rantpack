@@ -12,7 +12,7 @@ class App extends Component {
     books: [
       { bookName: "1984", writer: "George Orwell" },
       { bookName: "Da Vinci Code", writer: "Dan Brown" },
-      { bookName: "The Alchemist", writer: "Paulo Coelho" }
+      { bookName: "The Alchemist", writer: "Paulo~Coelho" }
     ],
     otherProp: "some other random bullshit.."
   };
@@ -20,7 +20,7 @@ class App extends Component {
   changeBookState = newBookName => {
     this.setState({
       books: [
-        { bookName: newBookName, writer: "George Orwell" },
+        { bookName: newBookName, writer: "George~Orwell" },
         { bookName: "The Da Vinci Code", writer: "Dan~Brown" },
         { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
