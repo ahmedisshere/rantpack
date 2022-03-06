@@ -14,6 +14,7 @@ class App extends Component {
       { bookName: "Da Vinci Code", writer: "Dan Brown" },
       { bookName: "The Alchemist", writer: "Paulo Coelho" }
     ],
+    
     otherProp: "some other random bullshit.."
   };
 
@@ -58,6 +59,7 @@ class App extends Component {
       return (
         <Book bookName={book.bookName} writer={book.writer}/>
       );
+      
     });
 
     return (
