@@ -12,29 +12,33 @@ class App extends Component {
     books: [
       { bookName: "1984", writer: "George Orwell" },
       { bookName: "Da Vinci Code", writer: "Dan Brown" },
-      { bookName: "The Alchemist", writer: "Paulo~Coelho" }
+      { bookName: "The Alchemist", writer: "Paulo Coelho" }
     ],
     otherProp: "some other random bullshit.."
   };
 
   changeBookState = newBookName => {
+
     this.setState({
       books: [
-        { bookName: newBookName, writer: "George~Orwell" },
-        { bookName: "The Da Vinci Code", writer: "Dan~Brown" },
-        { bookName: "Metamorphosis", writer: "Franz~Kafka" }
+        { bookName: newBookName, writer: "George Orwell" },
+        { bookName: "The Da Vinci Code", writer: "Dan Brown" },
+        { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
     });
+
   }
 
   changeWithInputChange = event => {
+
     this.setState({
       books: [
-        { bookName: event.target.value, writer: "George~Orwell" },
-        { bookName: "The Da Vinci Code", writer: "Dan~BrOwn" },
-        { bookName: "Metamorphosis", writer: "Franz~Kafka" }
+        { bookName: event.target.value, writer: "George Orwell" },
+        { bookName: "The Da Vinci Code", writer: "Dan BrOwn" },
+        { bookName: "Metamorphosis", writer: "Franz Kafka" }
       ]
     });
+
   }
 
   render() {
@@ -43,13 +47,32 @@ class App extends Component {
 
       border: "1px solid red",
       borderRadius: "5px",
-      backgroundColor: "darkslategray",
+      backgroundColor: "rgb(9, 39, 22)",
       color: "white"
-      
+
     };
 
 
-    console.log(this.state);
+    const booksState = this.state.books;
+
+    const books = booksState.map(book => {
+
+      return (
+
+        <Book bookName={book.bookName} writer={book.writer}/>
+
+      );
+
+    });
+
+
+
+    // console.log(booksState);
+    console.log(books);
+
+
+
+
     return (
 
       <div className="App">
@@ -58,18 +81,7 @@ class App extends Component {
         <button onClick={() => this.changeBookState("Nineteen Eighty-Four")}>Change State</button>
 
         <input type="text" onChange={this.changeWithInputChange} />
-
-        <Book bookName={this.state.books[0].bookName}
-          writer={this.state.books[0].writer} 
-          inputName={this.changeWithInputChange}/>
-
-        <Book bookName={this.state.books[1].bookName}
-          writer={this.state.books[1].writer} />
-
-        <Book bookName={this.state.books[2].bookName}
-          writer={this.state.books[2].writer}
-          change={() => this.changeBookState("Nineteen Eighty 4")} />
-
+        {books}
       </div>
 
     );
