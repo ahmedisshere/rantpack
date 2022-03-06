@@ -1,4 +1,4 @@
-# Rant App On The Go
+# Rantpack On The Go
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
