@@ -43,7 +43,7 @@ class App extends Component {
 
       border: "1px solid red",
       borderRadius: "5px",
-      backgroundColor: "black",
+      backgroundColor: "darkslategray",
       color: "white"
     };
 
