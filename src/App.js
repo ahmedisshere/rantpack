@@ -12,7 +12,8 @@ class App extends Component {
     books: [
       { bookName: "1984", writer: "George Orwell" },
       { bookName: "Da Vinci Code", writer: "Dan Brown" },
-      { bookName: "The Alchemist", writer: "Paulo Coelho" }
+      { bookName: "The Alchemist", writer: "Paulo Coelho" },
+      { bookName: "Fifty shades of Gray", writer: "Dan Brown" }
     ],
     
     otherProp: "some other random bullshit.."
