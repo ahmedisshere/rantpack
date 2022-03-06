@@ -45,6 +45,7 @@ class App extends Component {
       borderRadius: "5px",
       backgroundColor: "darkslategray",
       color: "white"
+      
     };
 
 
