@@ -78,7 +78,8 @@ class App extends Component {
       border: "1px solid red",
       borderRadius: "5px",
       backgroundColor: "rgb(9, 39, 22)",
-      color: "white"
+      color: "white",
+      margin: "20px"
     };
 
 

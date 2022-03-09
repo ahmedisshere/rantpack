@@ -1,21 +1,31 @@
 .App {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.527);
+  background-color: rgba(0, 0, 0, 0.651);
   color: white;
+  margin: 50px auto;
 }
 
 .color{
 
-  background-color: rgb(9, 39, 22);
+  background-color: rgb(69, 155, 126);
 
 }
 
 .btn{
-  background-color: darkolivegreen;
+  background-color: rgb(69, 155, 126);
   border-radius: 6px;
   color: white;
   padding: 4px;
   margin-bottom: 10px;
+}
+
+.instyle{
+  background-color: rgba(133, 170, 250, 0.808);
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 200px;
 }
 
 
