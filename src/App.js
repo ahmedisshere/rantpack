@@ -84,22 +84,21 @@ class App extends Component {
 
 
 
+let books = null;
 
+if (this.state.showBooks){
+  books = this.state.books.map((book,index) => {
+    return (
+      <Book bookName={book.bookName} 
+      writer={book.writer}
+      delete={() => this.deleteBookState(index)}
+      key={book.id}
+      inputName={(event) => this.changeWithInputState(event, index)}
+      />
+    );
+  });
+}
 
-
-
-    const books = this.state.books.map((book,index) => {
-
-      return (
-        <Book bookName={book.bookName} 
-        writer={book.writer}
-        delete={() => this.deleteBookState(index)}
-        key={book.id}
-        inputName={(event) => this.changeWithInputState(event, index)}
-        />
-      );
-      
-    });
 
 
 
@@ -111,8 +110,8 @@ class App extends Component {
         <h1 style={style}> Random States </h1>
         <button className='btn' onClick={this.toggleBooks}>Toggle Books</button>
 
-       {this.state.showBooks ? books : null }
-
+       {books}
+       
       </div>
 
     );
