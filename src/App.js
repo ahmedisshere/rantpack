@@ -104,13 +104,11 @@ class App extends Component {
 
 
 
-
-
     return (
 
       <div className="App">
         <h1 style={style}> Random States </h1>
-        <button onClick={this.toggleBooks}>Toggle Books</button>
+        <button className='btn' onClick={this.toggleBooks}>Toggle Books</button>
 
        {this.state.showBooks ? books : null }
 
