@@ -41,7 +41,6 @@ class App extends Component {
 
 
 
-
   deleteBookState = index => {
 
     // const  books = this.state.books.slice();
@@ -57,17 +56,9 @@ class App extends Component {
 
 
 
-
-
-
-
   toggleBooks = () => { 
     this.setState({showBooks: !this.state.showBooks});
   }
-
-
-
-
 
 
 
@@ -103,7 +94,6 @@ if (this.state.showBooks){
 
 
 
-
     return (
 
       <div className="App">
@@ -111,7 +101,7 @@ if (this.state.showBooks){
         <button className='btn' onClick={this.toggleBooks}>Toggle Books</button>
 
        {books}
-       
+
       </div>
 
     );
