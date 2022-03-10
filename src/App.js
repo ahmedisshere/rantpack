@@ -7,7 +7,7 @@ import MainComponent from './components/MainComponent';
 const App = () => {
 
   return <MainComponent />
-  
+
 }
 
 
