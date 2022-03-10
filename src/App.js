@@ -49,7 +49,7 @@ class App extends Component {
     const books = [...this.state.books];
     books.splice(index, 1);
     this.setState({
-      books: books
+    books: books
     });
   };
 
@@ -57,7 +57,9 @@ class App extends Component {
 
 
   toggleBooks = () => { 
-    this.setState({showBooks: !this.state.showBooks});
+
+    this.setState({ showBooks: !this.state.showBooks });
+
   }
 
 
@@ -78,6 +80,7 @@ class App extends Component {
 let books = null;
 
 if (this.state.showBooks){
+
   books = this.state.books.map((book,index) => {
     return (
       <Book bookName={book.bookName} 
@@ -89,8 +92,6 @@ if (this.state.showBooks){
     );
   });
 }
-
-
 
 
 
