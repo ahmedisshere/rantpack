@@ -62,7 +62,7 @@ class MainComponent extends Component {
     render() {
 
         const style = {
-            border: "2px solid red",
+            border: "2px solid tomato",
             borderRadius: "5px",
             backgroundColor: "rgb(9, 39, 22)",
             color: "white",
