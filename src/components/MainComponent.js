@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
-import Book from './Book'
+import Book from './Book';
+import bookList from '../assests/books.js';
 
 class MainComponent extends Component {
     state = {
-        books: [
-            { id: 1, bookName: "1984", writer: "George Orwell" },
-            { id: 2, bookName: "Da Vinci Code", writer: "Dan Brown" },
-            { id: 3, bookName: "The Alchemist", writer: "Paulo CoelhO" }
-        ],
+
+        books: bookList,
         showBooks: true
+
     };
-
-
-
-
-
 
 
     changeWithInputState = (event, index) => {
@@ -32,9 +26,6 @@ class MainComponent extends Component {
 
 
 
-
-
-
     deleteBookState = index => {
 
         // const  books = this.state.books.slice();
@@ -49,13 +40,11 @@ class MainComponent extends Component {
 
 
 
-
     toggleBooks = () => {
 
         this.setState({ showBooks: !this.state.showBooks });
 
     }
-
 
 
 
@@ -68,7 +57,6 @@ class MainComponent extends Component {
             color: "white",
             margin: "20px"
         };
-
 
 
         let books = null;
