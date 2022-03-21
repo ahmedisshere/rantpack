@@ -50,9 +50,9 @@ class MainComponent extends Component {
         const style = {
             border: "2px solid tomato",
             borderRadius: "5px",
-            backgroundColor: "#252D3F",
+            backgroundColor: "#3e5e6d",
             color: "white",
-            margin: "20px"
+            // margin: "20px"
         };
 
 
