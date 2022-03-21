@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import bookList from '../assests/books.js';
 import BookList from './lists/BookList';
 
+
 class MainComponent extends Component {
     state = {
 
@@ -49,7 +50,7 @@ class MainComponent extends Component {
         const style = {
             border: "2px solid tomato",
             borderRadius: "5px",
-            backgroundColor: "rgb(9, 39, 22)",
+            backgroundColor: "#252D3F",
             color: "white",
             margin: "20px"
         };

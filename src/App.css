@@ -7,21 +7,23 @@
 
 .color{
 
-  background-color: rgb(69, 155, 126);
+  /* background-color: #252D3F; */
+  background-color: #D8CECE;
+
 
 }
 
 .btn{
-  background-color: rgb(69, 155, 126);
+  background-color: rgb(16, 71, 53);
   border-radius: 6px;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 4px;
   margin-bottom: 10px;
 }
 
 .instyle{
-  background-color: rgba(133, 170, 250, 0.808);
-  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.993);
+  color: rgb(0, 0, 0);
   border-radius: 5px;
   padding: 5px;
   text-align: center;
